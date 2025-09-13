@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "candidate",
+						"type": "string"
+					}
+				],
+				"name": "getVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resetVotes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "candidate",
+						"type": "string"
+					}
+				],
+				"name": "vote",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Basic_Grammar_Tasks/Task1.sol": "Voting"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Basic_Grammar_Tasks/Task1.sol": {
+			"keccak256": "0xa289498e3e010a952ccf05c06d2ad8b2639fa01a1809404139c940cabb07e98f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://253f61092ed01bd57df765df5277e336254dd11d8129ed23ef6c01d2112c1466",
+				"dweb:/ipfs/Qmf1xaLH7FFDEmDGkx5178PextP5eiaTvcCbSKkKmP9WzS"
+			]
+		}
+	},
+	"version": 1
+}
