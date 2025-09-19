@@ -20,4 +20,10 @@ contract StrReverse {
         }
         return string(result);
     }
+
+    function vote(string memory candidate) external pure returns (bool) {
+        require(bytes(candidate).length > 0,"candidate address can not be null");
+        candidate = "hello world";
+        return true;
+    }
 }
