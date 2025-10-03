@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
 /*
 作业 1：ERC20 代币
 任务：参考 openzeppelin-contracts/contracts/token/ERC20/IERC20.sol实现一个简单的 ERC20 代币合约。要求：
@@ -11,17 +13,19 @@ pragma solidity ^0.8.20;
 提示：
 1. 使用 mapping 存储账户余额和授权信息。
 2. 使用 event 定义 Transfer 和 Approval 事件。
-3. 部署到sepolia 测试网，导入到自己的钱包
+3. 部署到 sepolia 测试网，导入到自己的钱包
 */
 contract WebToken {
-    string public name;
-    string public symbol;
-    uint8 public decimals;
-    uint256 public totalSupply;
-    address public owner;
+    
+    string name;
+    string symbol;
+    uint8 decimals;
+    uint256 totalSupply;
+    address owner;
 
     mapping(address account => uint256) private balances;
     mapping(address account => mapping(address spender => uint256)) private allowances;
+
 
     constructor(string memory _name, string memory _symbol, uint8 _decimals) {
         name = _name;
