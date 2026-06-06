@@ -9,6 +9,10 @@ describe("NFT auction Tests For V2", async function () {
     let mockNFTSecondAccount;
     let ethDataFeed;
     let usdcDataFeed;
+    let nftAuctionByFirstAccount;
+    let nftAuctionBySecondAccount;
+    let nftAuctionByThirdAccount;
+    let nftAuctionByFourthAccount;
     
     let ipfsUrl = "ipfs://0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238";
 

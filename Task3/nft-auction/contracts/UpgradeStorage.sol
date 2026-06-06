@@ -2,7 +2,6 @@
 pragma solidity ^0.8.0;
 
 contract UpgradeStorage {
-
     // 当前实现地址
     address public currentImplementation;
 

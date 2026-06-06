@@ -31,7 +31,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
     // It's recommended removing directory deployments instead of add args --reset when cmd deploying
 
-    if (hre.network.config.chainId == networks.sepolia.chainId && process.env.ETHERSCAN_APIKEY) {
+    if (hre.network.config.chainId === networks.sepolia.chainId && process.env.ETHERSCAN_APIKEY) {
         await hre.run("verify:verify", {
             address: nftAuctionContract.address
         });
